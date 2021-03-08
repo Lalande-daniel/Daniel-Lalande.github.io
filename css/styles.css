@@ -609,3 +609,52 @@ footer{
 video{
   margin-bottom: 1rem;
 }
+
+@media (max-width: 600px) {
+  * {
+    flex-direction: column;
+  }
+
+  body{
+    font-size: 0.5rem;
+  }
+
+  .inner-cursor{
+    display :none;
+  }
+  .outer-cursor{
+    display :none;
+  }
+
+  .perso{
+    display :none;
+  }
+
+  .presentation{
+    padding-top: 6rem;
+    width: 100%;
+  }
+
+  .content-cv{
+    width: 100%;
+  }
+
+  .blocs-cv{
+    width :100%;
+  }
+
+  .colonne2, .colonne3, .colonne1 {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .colonnes{
+    width: 100%;
+  }
+  .colonne-left{
+    width: 100%;
+  }
+  .colonne-right{
+    width: 100%;
+  }
+}
