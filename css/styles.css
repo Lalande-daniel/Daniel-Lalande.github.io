@@ -55,6 +55,9 @@ html{
     src: url(../font/Sofia_Pro_Semi_Bold_Italic.otf);
   }
 
+img{
+	background-color:#3C3C3C;
+}
 
   :root{
       --bluedark: #00053c;
