@@ -381,6 +381,7 @@ html{
 
 .image {
   display: block;
+  background-color:#3C3C3C;
 }
 
 .overlay {
