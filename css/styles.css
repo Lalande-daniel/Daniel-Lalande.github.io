@@ -178,7 +178,7 @@ html{
  }
 
 
- header{
+ #menu{
    width: 100%;
    display: flex;
    position: fixed;
@@ -688,7 +688,7 @@ video{
    align-items: center;
  }
 
- .header{
+ #menu{
   padding: 20px 20px 0px 20px;
  }
 
