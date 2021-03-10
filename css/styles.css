@@ -691,7 +691,8 @@ video{
 
  #menu{
   padding: 20px 20px 0px 20px;
-	 overflow:hidden;
+  overflow:hidden;
+	 
  }
 
  .colonne-footer{
@@ -718,5 +719,9 @@ video{
 .content-cv{
   padding: 10px 10px;
 }
+	
+	.home{
+		padding-top:15px;
+	}
 
 }
