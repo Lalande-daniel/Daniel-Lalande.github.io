@@ -84,3 +84,14 @@ function toRadians (angle) {
     return angle * (Math.PI / 180);
 }
 
+
+if ($(window).width() < 960) {
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("menu").style.height = "50px";
+      } else {
+        document.getElementById("menu").style.height = "200px";
+      }
+    }
+ }
