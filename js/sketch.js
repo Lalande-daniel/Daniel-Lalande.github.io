@@ -91,7 +91,7 @@ if ($(window).width() < 960) {
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("menu").style.height = "50px";
       } else {
-        document.getElementById("menu").style.height = "200px";
+        document.getElementById("menu").style.height = "120px";
       }
     }
  }
