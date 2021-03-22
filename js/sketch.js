@@ -37,7 +37,7 @@ window.onload = function() {
     $(document).ready(function(){
         setTimeout(function() {
           $(".loading").fadeOut();
-        }, 2000);
+        }, 1000);
       });
     
     var faces = document.getElementsByClassName("face");
