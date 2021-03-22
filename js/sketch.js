@@ -1,6 +1,39 @@
+let innerCursor = document.querySelector('.inner-cursor');
+let outerCursor = document.querySelector('.outer-cursor');
+
+document.addEventListener('mousemove', moveCursor);
+
+function moveCursor(e){
+    let x = e.clientX;
+    let y = e.clientY;
+
+    innerCursor.style.left=`${x}px`;
+    innerCursor.style.top=`${y}px`;
+    outerCursor.style.left=`${x}px`;
+    outerCursor.style.top=`${y}px`;
+}
+
+let links = Array.from(document.querySelectorAll("a"));
+
+console.log('links');
+
+links.forEach(link =>{
+    link.addEventListener('mouseover', ()=>{
+        innerCursor.classList.add("grow");
+    });
+    link.addEventListener('mouseleave', ()=>{
+        innerCursor.classList.remove("grow");
+    });
+    link.addEventListener('mouseover', ()=>{
+        outerCursor.classList.add("disapear");
+    });
+    link.addEventListener('mouseleave', ()=>{
+        outerCursor.classList.remove("disapear");
+    });
+});
+
 window.onload = function() {
-    let innerCursor = document.querySelector('.inner-cursor');
-    let outerCursor = document.querySelector('.outer-cursor');
+   
 
     
     var faces = document.getElementsByClassName("face");
@@ -14,36 +47,7 @@ window.onload = function() {
         face.setAttribute('data-y', faceY);
     }
 
-    document.addEventListener('mousemove', moveCursor);
 
-    function moveCursor(e){
-        let x = e.clientX;
-        let y = e.clientY;
-
-        innerCursor.style.left=`${x}px`;
-        innerCursor.style.top=`${y}px`;
-        outerCursor.style.left=`${x}px`;
-        outerCursor.style.top=`${y}px`;
-    }
-
-    let links = Array.from(document.querySelectorAll("a"));
-
-    console.log('links');
-
-    links.forEach(link =>{
-        link.addEventListener('mouseover', ()=>{
-            innerCursor.classList.add("grow");
-        });
-        link.addEventListener('mouseleave', ()=>{
-            innerCursor.classList.remove("grow");
-        });
-        link.addEventListener('mouseover', ()=>{
-            outerCursor.classList.add("disapear");
-        });
-        link.addEventListener('mouseleave', ()=>{
-            outerCursor.classList.remove("disapear");
-        });
-    });
 
 
     document.onmousemove = function(e) {
