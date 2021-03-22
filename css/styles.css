@@ -69,6 +69,7 @@ html{
       --TypoBoldItalic : "SofiaBoldItalic", sans-serif;
       --TypoExtraLight : "SofiaExtraLight", sans-serif;
       --TypoExtraLightItalic :"SofiaExtraLightItalic", sans-serif;
+      --margin: 32px;
   }
 
   .inner-cursor{
@@ -209,20 +210,20 @@ html{
   left: 20rem;
   position: fixed;
   margin-left: 3rem;
-  border-radius : 100px;
+  border-radius :2px;
   font-size:1.1rem;
   font-family: var(--TypoRegular);
   background-color:var(--bluelight) ;
   transform: translateX(-50%) translateY(-50%);
   transition:all 300ms ease;
   color: white;
-  padding:0.5rem 0.7rem 0.5rem 0.7rem;
+  padding:0.7rem 0.7rem 0.7rem 0.7rem;
 }
 
 .cv:hover{
   transition:all 300ms ease;
-  background-color: white;
-  color: var(--bluelight);
+  background-color: var(--bluelink);
+  
 }
 
 .cv-responsive{
@@ -397,16 +398,29 @@ html{
 
 .images-projets{
   display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  
+}
+
+.link{
+ flex: 0 1 calc((100% - 24px - 24px) / 3);
+ display:block;
+ margin-bottom: 16px;
+ 
 }
 
 .container {
   position: relative;
-  margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
+  height: 100%;
+  
 }
 
 .image {
-  display: block;
+  
+
+  max-width:100%;
   background-color:#3C3C3C;
 }
 
@@ -420,11 +434,10 @@ html{
   width: 0;
   height: 100%;
   transition: .5s ease;
-  
-  
 }
 
 .container:hover .overlay {
+  
   width: 100%;
   border-radius: 5px;
 }
@@ -478,7 +491,7 @@ html{
 }
 
 .images-projets img{
-  width: 100%;
+
   border-radius: 5px;
 }
 
