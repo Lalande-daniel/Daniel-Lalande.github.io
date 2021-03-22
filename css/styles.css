@@ -779,7 +779,7 @@ html{
 .link{
  flex: 0 1 calc((100% - 24px - 24px) / 3);
  display:block;
- margin-bottom: 16px;
+ margin-bottom: 24px;
  line-height: 0;
  
 }
