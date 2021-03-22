@@ -34,7 +34,11 @@ links.forEach(link =>{
 
 window.onload = function() {
    
-
+    $(document).ready(function(){
+        setTimeout(function() {
+          $(".loading").fadeOut();
+        }, 2000);
+      });
     
     var faces = document.getElementsByClassName("face");
     for(var i=0;i<faces.length;i++){
@@ -100,10 +104,3 @@ if ($(window).width() < 960) {
     }
  }
 
- $(function() {
-    $(document).ready(function(){
-      setTimeout(function() {
-        $(".loading").fadeOut();
-      }, 2000);
-    });
-});
