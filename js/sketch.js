@@ -99,3 +99,11 @@ if ($(window).width() < 960) {
       }
     }
  }
+
+ $(function() {
+    $(document).ready(function(){
+      setTimeout(function() {
+        $(".loading").fadeOut();
+      }, 2000);
+    });
+});
