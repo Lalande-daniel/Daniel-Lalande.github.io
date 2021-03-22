@@ -72,6 +72,29 @@ html{
       --margin: 32px;
   }
 
+  .loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--bluedark);
+    font-size: 1.4rem;
+    font-family: var(--TypoLight);
+    color: white;
+    z-index: 10000;
+  }
+
+  .loading span{
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+  }
+
+  .loading strong{
+    font-size: 3rem;
+  }
+
   .inner-cursor{
     position : fixed;
     left: 10px;
@@ -86,6 +109,7 @@ html{
     z-index: 1000;
     border: solid 1px white;
     overflow: hidden;
+    z-index: 100000;
     
 
   }
@@ -108,7 +132,7 @@ html{
     height: 125px;
     color: white;
     transition-timing-function: cubic-bezier(.66,1.87,0,.77);
-    z-index: 1000;
+    z-index: 100000;
     
   }
   
@@ -122,7 +146,7 @@ html{
     border-radius: 50% ;
     pointer-events: none;
     transition: 0.08s;
-    z-index: 1000;
+    z-index: 100000;
   }
   
   .outer-cursor.disapear{
@@ -408,6 +432,7 @@ html{
  flex: 0 1 calc((100% - 24px - 24px) / 3);
  display:block;
  margin-bottom: 16px;
+ line-height: 0;
  
 }
 
@@ -654,7 +679,7 @@ video{
   padding-bottom: 6.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
   * {
     flex-direction: column;
   }
