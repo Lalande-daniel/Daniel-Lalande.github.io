@@ -37,11 +37,9 @@ links.forEach(link =>{
 window.onload = function() {
    
     $(document).ready(function(){
-        setTimeout(function() {
           $(".loading").fadeOut();
-        }, 1000);
-      });
-    
+        });
+          
     var faces = document.getElementsByClassName("face");
     for(var i=0;i<faces.length;i++){
         var face = faces[i];
