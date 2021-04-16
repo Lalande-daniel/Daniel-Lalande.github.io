@@ -1,5 +1,12 @@
 *{
   cursor:none;
+	
+	.body{
+		display:none;
+	}
+	.face{
+		display:none;
+	}
   
 }
 html{
