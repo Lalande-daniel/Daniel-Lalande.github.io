@@ -4,6 +4,7 @@
 }
 html{
   scroll-behavior: smooth;
+	max-width:70%;
 }
 
 @font-face {
