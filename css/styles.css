@@ -5,6 +5,7 @@
 html{
   scroll-behavior: smooth;
 	max-width:1300px;
+	position:absolute;
 }
 
 @font-face {
